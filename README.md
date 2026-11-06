@@ -111,12 +111,30 @@ La información sobre el dataset, su formato y sus características se documenta
 - El modelo Random Forest no demuestra por sí solo relaciones causales entre las características y la deserción estudiantil.
 
 ## Respuestas
-1. …
-2. …
-3. …
-4. …
-5. …
-6. …
+
+1. ¿Por qué el imputador y el escalador están dentro del Pipeline?
+
+Porque así el imputador y el escalador se ajustan únicamente con los datos de entrenamiento de cada partición de la validación cruzada. Si se aplicaran antes a todo el dataset, podrían utilizar información de los datos de validación y producir fuga de datos, haciendo que las métricas parezcan mejores de lo que realmente son.
+
+2. ¿Por qué el 20 % de prueba no se usa en este entregable?
+
+Porque el entregable utiliza validación cruzada sobre el conjunto de entrenamiento para comparar modelos y evaluar su estabilidad. El 20 % de prueba debe reservarse para una evaluación final. Si se utilizara para elegir el modelo, se estaría adaptando la selección a esos datos y la evaluación dejaría de ser independiente.
+
+3. ¿Qué mide la desviación estándar entre las 5 semillas y qué NO mide?
+
+Mide cuánto varía el Accuracy promedio del modelo al cambiar la semilla utilizada en el experimento. En Random Forest obtuve una media de 0.9241 y una desviación estándar de 0.0009 entre las cinco semillas. No mide la incertidumbre sobre todos los posibles datasets ni garantiza el rendimiento futuro del modelo.
+
+4. ¿Su modelo supera al baseline en las 5 semillas?
+
+Sí. Random Forest supera al baseline en las cinco semillas. Su Accuracy promedio entre semillas fue 0.9241, mientras que el baseline obtuvo 0.8010. La diferencia es aproximadamente 0.1231, mucho mayor que la desviación estándar de Random Forest (0.0009). Esto indica que Random Forest tuvo un rendimiento superior y estable en los experimentos realizados.
+
+5. ¿Por qué el archivo de la zona raw no se modifica nunca y para qué sirve su MD5?
+
+Porque la zona raw conserva una copia intacta del dataset original y permite repetir el procesamiento desde la misma fuente. El MD5 sirve para identificar el archivo y comprobar si su contenido cambió. En mi proyecto, el archivo original tiene el MD5 7651033e85d057d52b27b1cfa4a67755.
+
+6. ¿Por qué PYTHONHASHSEED=0 debe definirse antes de iniciar Python?
+
+Porque Python establece la semilla de sus funciones hash al iniciar el intérprete. Definir PYTHONHASHSEED=0 dentro del script sería demasiado tarde, ya que el proceso ya habría inicializado el mecanismo de hash. Por eso lo configuro desde PowerShell antes de ejecutar los comandos de Python.
 
 ## Declaración de uso de IA
 
