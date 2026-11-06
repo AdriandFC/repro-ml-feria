@@ -30,12 +30,11 @@ python -m src.run_seeds
 
 ## Resultado esperado
 Una corrida (`--seed 42`):
-```
-PEGAR AQUÍ LA SALIDA JSON
-```
-Cinco semillas (`results/results_summary.csv`): PEGAR LA TABLA.
+{"seed": 42, "modelo": "rf", "data_md5": "7f668c20ebe1f8c985985f86c7546db8", "accuracy_mean": 0.92379, "accuracy_sd": 0.00703, "f1_macro_mean": 0.87079, "f1_macro_sd": 0.01246, "recall_macro_mean": 0.84438, "recall_macro_sd": 0.01428}
 
-**Resultado reportado:** MÉTRICA = media ± DE entre 5 semillas (baseline: …).
+Cinco semillas (results/results_summary.csv): PENDIENTE.
+
+**Resultado reportado:** Accuracy = 0.92379 ± 0.00703, F1 macro = 0.87079 ± 0.01246 y Recall macro = 0.84438 ± 0.01428 (validación cruzada de 5 particiones, semilla 42).
 
 ![Corridas en MLflow](docs/mlflow.png)
 

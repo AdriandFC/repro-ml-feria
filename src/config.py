@@ -11,11 +11,46 @@ RESULTS = ROOT / "results" / "results_summary.csv"
 TARGET = "Dropout"
 TAREA = "clasificacion"
 
-COLS_NUM = []  # Pendiente: definir variables numéricas del modelo
-COLS_CAT = []  # Pendiente: definir variables categóricas del modelo
+COLS_NUM = [
+    "Age",
+    "EnrollmentDuration",
+    "DaysWithoutFrequency",
+    "LifetimeValue",
+    "AverageFrequency",
+    "UseByTime",
+    "AthleticsActivities",
+    "WaterActivities",
+    "FitnessActivities",
+    "DanceActivities",
+    "TeamActivities",
+    "RacketActivities",
+    "CombatActivities",
+    "NatureActivities",
+    "SpecialActivities",
+    "OtherActivities",
+    "NumberOfActivities",
+    "NumberOfFrequencies",
+    "AttendedClasses",
+    "AttendedClassesAverage",
+    "AllowedWeeklyVisitsBySLA",
+    "AllowedNumberOfVisitsBySLA",
+    "RealNumberOfVisits",
+    "Ratio",
+    "NumberOfRenewals",
+    "HasReferences",
+    "NumberOfReferences"
+]
+COLS_CAT = [
+    "AgeClass",
+    "Gender",
+    "EnrollmentDurationClass2",
+    "DaysWithoutFrequencyClass2",
+    "AverageFrequencyClass2",
+    "RatioClass2"
+]
 CODIGOS_FALTANTES = []
 
-MODELO = "CAMBIAR"  # Falta confirmar el algoritmo asignado
+MODELO = "rf"
 
 SEMILLA_PARTICION = 42
 SEMILLAS = [0, 1, 2, 3, 42]
