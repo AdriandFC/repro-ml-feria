@@ -99,9 +99,11 @@ La información sobre el dataset, su formato y sus características se documenta
 ## Prueba del extraño
 
 - Persona que realizó la prueba:** Giancarlo Neyra Santa Cruz
+- Usuario de GitHub: Neyrus110.
 - Grupo: Grupo 2
+- Versión de Python: 3.13.5.
 - Issue: (https://github.com/AdriandFC/repro-ml-feria/issues/1#issue-6237119903)
-- Resultado: La prueba se realizó desde un entorno virtual nuevo. Se verificó la instalación de dependencias y la ejecución del pipeline y los resultados coincidieron.
+- Resultado: La prueba se realizó desde un entorno virtual nuevo. El proyecto se ejecutó correctamente y los resultados coincidieron con los registrados en este README, incluyendo los hashes MD5 y las métricas del modelo.
 
 ## Limitaciones
 
