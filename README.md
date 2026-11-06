@@ -98,10 +98,10 @@ La información sobre el dataset, su formato y sus características se documenta
 
 ## Prueba del extraño
 
-- **Persona que realizó la prueba:** [Nombre del compañero]
-- **Grupo:** [Grupo del compañero]
-- **Issue:** [Enlace al Issue de GitHub]
-- **Resultado:** [Indicar si pudo clonar el repositorio, instalar las dependencias y ejecutar el pipeline correctamente].
+- Persona que realizó la prueba:** Giancarlo Neyra Santa Cruz
+- Grupo: Grupo 2
+- Issue: (https://github.com/AdriandFC/repro-ml-feria/issues/1#issue-6237119903)
+- Resultado: La prueba se realizó desde un entorno virtual nuevo. Se verificó la instalación de dependencias y la ejecución del pipeline y los resultados coincidieron.
 
 ## Limitaciones
 
