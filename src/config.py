@@ -14,40 +14,13 @@ TAREA = "clasificacion"
 COLS_NUM = [
     "Age",
     "EnrollmentDuration",
-    "DaysWithoutFrequency",
     "LifetimeValue",
     "AverageFrequency",
-    "UseByTime",
-    "AthleticsActivities",
-    "WaterActivities",
-    "FitnessActivities",
-    "DanceActivities",
-    "TeamActivities",
-    "RacketActivities",
-    "CombatActivities",
-    "NatureActivities",
-    "SpecialActivities",
-    "OtherActivities",
-    "NumberOfActivities",
-    "NumberOfFrequencies",
-    "AttendedClasses",
-    "AttendedClassesAverage",
-    "AllowedWeeklyVisitsBySLA",
-    "AllowedNumberOfVisitsBySLA",
     "RealNumberOfVisits",
-    "Ratio",
+    "NumberOfActivities",
     "NumberOfRenewals",
-    "HasReferences",
-    "NumberOfReferences"
 ]
-COLS_CAT = [
-    "AgeClass",
-    "Gender",
-    "EnrollmentDurationClass2",
-    "DaysWithoutFrequencyClass2",
-    "AverageFrequencyClass2",
-    "RatioClass2"
-]
+COLS_CAT = ["Gender"]
 CODIGOS_FALTANTES = []
 
 MODELO = "rf"
